@@ -1,12 +1,13 @@
-.parent {
-  color:red;
-}
-
 .header-container {
   display: flex;
   justify-content: space-between;
-  border: 1px solid black;
-
+  border:none;
+  padding: 0 30px;
+  background-color:rgb(225, 248, 240);
+  transition: background-color 0.15s;
+}
+.header-container:hover {
+  background-color: rgb(190, 250, 229);
 }
 .nav-items > ul {
   display: flex;
@@ -24,16 +25,17 @@
   flex-wrap: wrap;
 }
 .res-card {
-  width:200px;
+  width:220px;
   border: none;
-  padding: 5px;
+  padding: 10px;
   margin:5px;
   box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.35);
-  transition: box-shadow 0.15s, padding 0.15s, width 0.15s;
+  transition: box-shadow 0.15s, background-color 0.15s;
 }
 .res-card:hover {
   cursor:pointer;
   box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.35);
+  background-color: rgb(246, 212, 168);
 }
 .res-logo {
   width:100%;
@@ -42,4 +44,11 @@
 }
 .search {
   padding : 20px;
+}
+.body {
+  padding : 0 150px;
+}
+.top-rated-res {
+  margin: 10px;
+  padding:5px;
 }
